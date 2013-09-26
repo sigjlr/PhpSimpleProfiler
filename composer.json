@@ -4,7 +4,7 @@
     "description": "Lightweight php profiler library",
     "keywords": ["profiler", "ini", "memory usage"],
     "license": "MIT",
-    "homepage": "",
+    "homepage": "https://github.com/sigjlr/PhpSimpleProfiler",
     "authors": [
         {
             "name": "sigjlr",
