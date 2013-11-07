@@ -9,7 +9,7 @@ namespace PhpSimpleProfiler\Handler;
 class StreamHandler extends  AbstractHandler{
 	
 	/**
-	 * 
+	 * Printing function.
 	 */
 	public function printData(\PhpSimpleProfiler\Profiler $profiler){
 		$statistics = $profiler->getStat();

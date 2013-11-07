@@ -12,7 +12,7 @@ class AbstractHandler implements IHandler{
 
 	
 	/**
-	 * If false the handler manage directly the data to the output, else return a the data as result of printData function
+	 * If false the handler manage directly the data to the output, else return the data as result of printData function
 	 */	
 	public function returnData(){}
 	
