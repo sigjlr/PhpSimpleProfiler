@@ -12,22 +12,30 @@ This example assumes you are autoloading dependencies using Composer or any othe
 
 PhpSimpleProfiler available method:
 
-* **setOption($name , $value)**
-Set the option (if $name is a valid option name) value with the desidered one.
-Available option : 
-	* `"active"` (bool) `(default = true)` If setted to false no profile will recorded 
-	* `"handler"` (PhpSimpleProfiler\Handler\IHandler) `(default = PhpSimpleProfiler\HandlerStreamHandler)` The object that manipulate and return the data
-	* `"realUsage"` (bool) `(default = false)` Set it to TRUE to get the real size of memory allocated from system (all the memory used by the engine php), set it to FALSE to get only the memory used by emalloc() (only script)
+- setOption($name , $value)
+	Set the option (if $name is a valid option name) value with the desidered one.
+	Available option : 
+		'active' (bool) (default = true) If setted to false no profile will recorded 
+		'handler' (PhpSimpleProfiler\Handler\IHandler) (default = PhpSimpleProfiler\HandlerStreamHandler) The object that manipulate and return the data
+		'realUsage' (bool) (default = false) Set it to TRUE to get the real size of memory allocated from system (all the memory used by the engine php), set it to FALSE to get only the memory used by emalloc() (only script)
 	
-* **add($message)**
-Add an entry to the statistical profile.
+- add($message)
+	Add an entry to the statistical profile.
 	
-* **stop()**
-Ends the profiler.
+- stop()
+	Ends the profiler.
 	
-* **printData()**
-Gets the data.
+- printData()
+	Gets the data.
+
 	
+###Handlers
+- StreamHandler 
+	This handler is intended to print profile data in a log file
+		 
+- HTMLHandler
+	This handler is intended to show data into a web page
+
 
 
 ###Example
